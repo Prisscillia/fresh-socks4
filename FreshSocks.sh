@@ -1,5 +1,11 @@
 !#/bin/bash
 
+# Check if we are root 
+if [ "$EUID" -ne 0 ]
+  then echo "Please Run as Root"
+  exit
+fi
+
 # Creating our files so bash doesn't yell at us 
 touch checkedsocks
 touch dirtysocks
@@ -30,10 +36,12 @@ wget -O cleansocks "https://hidemy.name/api/checker.php?out=plain&action=export&
 		#Format proxies for ProxyChains.conf 
 		sed -i -e 's/^/SOCKS /' -e 's/:/ /' cleansocks
 
-######################################
-# Now comes the hard part of figuring out how to
-# Let proxychains come in contact with the data
-# Do I want to let this script run as root ? 
-# Do I want to let it have write permissions to my /etc/proxychains.conf
-# Can I only allow it permissions for that file ? 
-#  How do I get the OLD Proxies out of the .conf  ?
+#How do I get the OLD Proxies out of the .conf  ?
+sed -i 115q /etc/proxychains.conf # WArning this is a personal configuration for MY BOX 
+# I DO NOT PORTING THIS METHOD AS YOUR CONF LINE COUNT MAY 
+# BE DIFFERENT 
+# DO THE MATH 
+# SED will cut everything AFTER the 115th line
+# thus saving my configuration file and allowing me
+# to add as many proxies as neccesary. 
+cat cleansocks >> /etc/proxychains.conf
