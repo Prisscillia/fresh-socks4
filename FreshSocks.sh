@@ -1,4 +1,4 @@
-!#/bin/bash
+#!/bin/bash
 
 # Check if we are root 
 if [ "$EUID" -ne 0 ]
@@ -37,11 +37,11 @@ wget -O cleansocks "https://hidemy.name/api/checker.php?out=plain&action=export&
 		sed -i -e 's/^/SOCKS /' -e 's/:/ /' cleansocks
 
 #How do I get the OLD Proxies out of the .conf  ?
-sed -i 115q /etc/proxychains.conf # WArning this is a personal configuration for MY BOX 
+sed -i 115q /etc/proxychains4.conf # WArning this is a personal configuration for MY BOX 
 # I DO NOT PORTING THIS METHOD AS YOUR CONF LINE COUNT MAY 
 # BE DIFFERENT 
 # DO THE MATH 
 # SED will cut everything AFTER the 115th line
 # thus saving my configuration file and allowing me
 # to add as many proxies as neccesary. 
-cat cleansocks >> /etc/proxychains.conf
+cat cleansocks >> /etc/proxychains4.conf
