@@ -49,4 +49,4 @@ sleep 1.8m
 
 # W4rn1ng this is a personal configuration for MY BOX 
 sed -i 116q /etc/proxychains4.conf 
-cat cleansocks >> /etc/proxychains4.conf
+cat $cleansocks >> /etc/proxychains4.conf
