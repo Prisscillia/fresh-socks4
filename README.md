@@ -15,6 +15,8 @@
 # To Do List 
 > Check if we have tor enabled in our proyxychains.conf; check status of tor if yes; bring it up if not running
 > 
+> Make the Directories Hidden
+>
 > Add Usage Arguemnts & Verbose Mode
 >
 > Regex to know imperically we are at the end of "proxychains.conf" snip & append from there
