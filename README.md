@@ -1,6 +1,3 @@
-# fresh-socks4
-A small shell script to automate the gathering of proxy servers.
-
 # Quick Warnings 
 > This Jawn is slow, takes a full 1.8 minute sleep for the API to finish checking the IP addrs 
 >
