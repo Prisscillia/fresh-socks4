@@ -27,7 +27,7 @@ if [[ ! -e $dirtysocks ]]; then
 	touch $dirtysocks
 fi
 
-if [[ ! -e $landrybag ]]; then
+if [[ ! -e $laundrybag ]]; then
 	touch $laundrybag
 fi
 
