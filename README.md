@@ -1,7 +1,17 @@
-# fresh-socks
+# fresh-socks4
+A small shell script to automate the gathering of proxy servers.
 
-First and foremost this tool is still in development.
+# Quick Warnings 
+Still in developemnt
+Anonmymity is only guarenteed by your knowledge and actions
+This code is for educational purposes only.
 
-Secondly this tool is big SLOW; 
-in the script there is a 1.5 Minute wait timer. 
-This is due to the websites api taking this time to check the ips for us.
+# fresh-socks4.sh
+> Collects IPS enumatrated by https://github.com/TheSpeedX/PROXY-List
+> Sends the maximum number of 100 random addresses from that list via curl request to https://hidemy.name/api
+> Requests Lists of Reponsive addreses back from https://hidemy.nam/api
+> Formats List for Proxychains.conf file ie. {protocol address port}
+
+# There are fun and easy options to customize this script that I would encourage 
+ > Trimming your proxychains.conf of old proxies
+ > Automatically adding new proxies into your file
