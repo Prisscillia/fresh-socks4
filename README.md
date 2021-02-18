@@ -1,8 +1,3 @@
-# Quick Warnings 
-> This Jawn is slow, takes a full 1.8 minute sleep for the API to finish checking the IP addrs 
->
->
-
 # fresh-socks4.sh
 > Collects IPS enumatrated by https://github.com/TheSpeedX/PROXY-List
 > 
@@ -11,6 +6,19 @@
 > Requests Lists of Reponsive addreses back from https://hidemy.nam/api
 > 
 > Formats List for Proxychains.conf file ie. {protocol address port}
+
+# Quick Warnings 
+> This Jawn is slow, takes a full 1.8 minute sleep for the API to finish checking the IP addrs 
+>
+>
+
+# To Do List 
+> Check if we have tor enabled in our proyxychains.conf; check status of tor if yes; bring it up if not running
+> 
+> Regex to know imperically we are at the end of "proxychains.conf" snip & append from there
+> 
+> Find a faster way to check hosts for aliveness, maybe smaller payloads distributed to more apis ?
+> 
 
 # There are fun and easy options to customize this script that I would encourage 
 > Trimming your proxychains.conf of old proxies
