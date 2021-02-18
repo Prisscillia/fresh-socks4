@@ -48,5 +48,5 @@ sleep 1.8m
 		sed -i -e 's/^/socks4 /' -e 's/:/ /' $cleansocks
 
 # W4rn1ng this is a personal configuration for MY BOX 
-#sed -i 116q /etc/proxychains4.conf 
-#cat cleansocks >> /etc/proxychains4.conf
+sed -i 116q /etc/proxychains4.conf 
+cat cleansocks >> /etc/proxychains4.conf
