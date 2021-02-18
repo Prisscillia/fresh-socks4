@@ -15,6 +15,12 @@ A small shell script to automate the gathering of proxy servers.
 > 
 > Formats List for Proxychains.conf file ie. {protocol address port}
 
+# There are fun and easy options to customize this script that I would encourage 
+> Trimming your proxychains.conf of old proxies
+>
+> Automatically adding new proxies into your file
+> 
+> Automatically adding new proxies into your file
  # License 
 
  MIT License
@@ -27,9 +33,3 @@ The above copyright notice and this permission notice shall be included in all c
 
 THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
 
-# There are fun and easy options to customize this script that I would encourage 
-> Trimming your proxychains.conf of old proxies
->
-> Automatically adding new proxies into your file
-> 
-> Automatically adding new proxies into your file
