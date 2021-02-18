@@ -9,12 +9,14 @@
 
 # Quick Warnings 
 > This Jawn is slow, takes a full 1.8 minute sleep for the API to finish checking the IP addrs 
->
->
+> DO NOT RUN THIS SCRIPT WITHOUT READING THE CODE IT WILL MORE THAN LIKELY DESTROY YOUR PROXYCHAINS.CONF 
+> PERSONALIZE THE SED EDIT FOR YOUR NEEDS 
 
 # To Do List 
 > Check if we have tor enabled in our proyxychains.conf; check status of tor if yes; bring it up if not running
 > 
+> Make the Directories Hidden
+>
 > Add Usage Arguemnts & Verbose Mode
 >
 > Regex to know imperically we are at the end of "proxychains.conf" snip & append from there
