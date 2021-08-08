@@ -1,7 +1,7 @@
 # fresh-socks4.sh
 > Collects IPS enumatrated by https://github.com/TheSpeedX/PROXY-List
 > 
-> Sends the maximum number of 100 random addresses from that list via curl post request to https://hidemy.name/api
+> Sends the maximum number of 100 random addresses from that list to https://hidemy.name/api
 > 
 > Requests Lists of Reponsive addreses back from https://hidemy.nam/api
 > 
@@ -9,6 +9,7 @@
 
 # Quick Warnings 
 > This Jawn is slow, takes a full 1.8 minute sleep for the API to finish checking the IP addrs 
+> 
 > DO NOT RUN THIS SCRIPT WITHOUT READING THE CODE IT WILL MORE THAN LIKELY DESTROY YOUR PROXYCHAINS.CONF 
 > PERSONALIZE THE SED EDIT FOR YOUR NEEDS 
 
