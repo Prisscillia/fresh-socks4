@@ -7,7 +7,7 @@ trap 'rm -drf $temp_dir' EXIT
 temp_dir=$(mktemp -d)|| exit 1
 echo "our temp file directory is $temp_dir"
 checkedsocks=$(mktemp -p $temp_dir)
-dirtysocks=$(mktemp -p $temp_dir)
+dirtysocks=$(mktemp -p $temp_dir) 
 laundrybag=$(mktemp -p $temp_dir)
 cleansocks=$(mktemp -p $temp_dir)
 #	Grab a fresh Socks4 proxy list from TheSpeedX's Github
