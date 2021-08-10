@@ -14,24 +14,14 @@
 > PERSONALIZE THE SED EDIT FOR YOUR NEEDS 
 
 # To Do List 
-> Check if we have tor enabled in our proyxychains.conf; check status of tor if yes; bring it up if not running
-> 
-> Make the Directories Hidden
->
 > Add Usage Arguemnts & Verbose Mode
 >
-> Regex to know imperically we are at the end of "proxychains.conf" snip & append from there
+> Regex to find the end of the /etc/proxychains.conf & append from there
 > 
 > Find a faster way to check hosts for aliveness, maybe smaller payloads distributed to more apis ?
-> 
-
-# There are fun and easy options to customize this script that I would encourage 
-> Trimming your proxychains.conf of old proxies
 >
-> Automatically adding new proxies into your file
+> Do it in C  ? 
 > 
-> Automatically adding new proxies into your file
-
  # License 
 
  MIT License
