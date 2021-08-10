@@ -10,6 +10,7 @@ if test $status -ne 0
 then 
 	service tor start
 fi
+
 trap 'rm -drf $temp_dir' EXIT 
 temp_dir=$(mktemp -d)|| exit 1
 echo "our temp file directory is $temp_dir"
@@ -23,6 +24,7 @@ sed -i -e 1,2d $laundrybag #Cutting out Comment
 #	Grab 100 Hosts from the laundrybag and save them to dirtysocks
 shuf -n 100 $laundrybag | sed -e ':a' -e 'N' -e '$!ba' -e 's/:/%3A/g' -e 's/\n/%0A/g' > $dirtysocks #Format dirtysocks for the hidemy.name/api to check
 #	Passing out data to hidemy.name/api
+#	100 address to the api is a lot what if we do 25 to 4 seperate calls ? will that make it faster ?
 curl -d "data=$(cat $dirtysocks)" -X POST 'https://hidemy.name/api/checker.php?out=js&action=list_new&tasks=socks4&parser=lines' --silent | sed -e 's/^.*:/ /g' -e 's|[}]||g' | tr -d " " | tee $checkedsocks
 sleep 1.8m
 ##	Grab file of responsive proxies from Hideme.name/api
