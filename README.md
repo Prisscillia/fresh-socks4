@@ -16,6 +16,8 @@
 # To Do List 
 > Add Usage Arguemnts & Verbose Mode
 >
+> Check to see if tor service is enabled 
+>
 > Regex to find the end of the /etc/proxychains.conf & append from there
 > 
 > Find a faster way to check hosts for aliveness, maybe smaller payloads distributed to more apis ?
